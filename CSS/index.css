@@ -164,6 +164,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 570px;
+  position: relative;
 }
 header img {
   height: 100%;
@@ -192,16 +193,20 @@ header .main button {
   text-decoration: none;
   font-size: 16px;
   outline: none;
-  width: 100%;
-  max-width: 200px;
+  width: 200px;
   height: 50px;
 }
 .mission {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   height: 570px;
   position: relative;
+}
+@media (min-width: 501px) {
+  .mission {
+    justify-content: flex-end;
+  }
 }
 .mission img {
   height: 100%;
@@ -218,15 +223,14 @@ header .main button {
   max-width: 500px;
   height: 500px;
   position: absolute;
-  padding: 0 15px;
+  padding: 5px 15px;
   background-color: white;
   border-radius: 10px;
-  margin-right: 5px;
-  right: 0;
 }
 @media (min-width: 501px) {
   .mission section {
     margin-right: 5%;
+    right: 0;
   }
 }
 @media (min-width: 801px) {
@@ -237,9 +241,14 @@ header .main button {
 .help {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   height: 570px;
   position: relative;
+}
+@media (min-width: 501px) {
+  .help {
+    justify-content: flex-start;
+  }
 }
 .help img {
   height: 100%;
@@ -256,15 +265,14 @@ header .main button {
   max-width: 500px;
   height: 500px;
   position: absolute;
-  padding: 0 15px;
+  padding: 5px 15px;
   background-color: white;
   border-radius: 10px;
-  margin-left: 5px;
-  left: 0;
 }
 @media (min-width: 501px) {
   .help section {
     margin-left: 5%;
+    left: 0;
   }
 }
 @media (min-width: 801px) {
@@ -277,6 +285,7 @@ header .main button {
   align-items: center;
   justify-content: center;
   height: 570px;
+  position: relative;
 }
 .contact img {
   height: 100%;

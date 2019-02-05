@@ -1,14 +1,19 @@
 .mission {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     height: 570px;
     position: relative;
+    @media @tablet {
+        justify-content: flex-end;
+    }
+
       img {
           height: 100%;
           width: 100%;
           object-fit: cover;
       }
+
       section {
           display: flex;
           align-items: center;
@@ -19,18 +24,17 @@
           max-width: 500px;
           height: 500px;
           position: absolute;
-          padding: 0 15px;
+          padding: 5px 15px;
           background-color: white;
           border-radius: 10px;
-          margin-right: 5px;
-          right: 0;
           @media @tablet {
             margin-right: 5%;
-
+            right: 0;
           }
-    
+
           @media @desktop {
             margin-right: 10%;
           }
-      }
-  }
+          
+        }
+}

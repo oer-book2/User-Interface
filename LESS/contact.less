@@ -1,17 +1,40 @@
 .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
     img{
-        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     
     section {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: column;
         text-align: center;
         width: 80%;
-        margin: 50px 10% 50px 10%;
         max-width: 500px;
+        height: 170px;
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+        
+        @media @tablet {
+     
+        }
+  
+        @media @desktop {
+      
+        }
+    }
+
+    p {
+        width: 169px;
+        display: flex;
+        justify-content: space-between;
     }
    
 }

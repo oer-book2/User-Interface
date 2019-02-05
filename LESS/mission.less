@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: flex-end;
     height: 570px;
+    position: relative;
       img {
           height: 100%;
           width: 100%;
@@ -21,5 +22,15 @@
           padding: 0 15px;
           background-color: white;
           border-radius: 10px;
+          margin-right: 5px;
+          right: 0;
+          @media @tablet {
+            margin-right: 5%;
+
+          }
+    
+          @media @desktop {
+            margin-right: 10%;
+          }
       }
   }

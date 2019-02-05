@@ -156,6 +156,13 @@ img {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
+  background: white;
+}
+@media (min-width: 501px) {
+  .container {
+    max-width: 1000px;
+    width: 100%;
+  }
 }
 header {
   display: flex;
@@ -190,4 +197,67 @@ header .main button {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+}
+.mission {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 570px;
+}
+.mission img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.mission section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  height: 500px;
+  position: absolute;
+  padding: 0 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 570px;
+}
+.help img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.help section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  height: 500px;
+  position: absolute;
+  padding: 0 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.contact img {
+  border-radius: 50%;
+}
+.contact section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 50px 10% 50px 10%;
+  max-width: 500px;
 }

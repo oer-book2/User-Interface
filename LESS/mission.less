@@ -2,10 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 570px;
+    height: 870px;
     position: relative;
     @media @tablet {
         justify-content: flex-end;
+        height: 570px;
     }
 
       img {
@@ -15,6 +16,8 @@
       }
 
       section {
+          border: 1px solid black;
+          box-shadow: 5px 10px 8px black;
           display: flex;
           align-items: center;
           justify-content: space-around;
@@ -22,7 +25,7 @@
           text-align: center;
           width: 80%;
           max-width: 500px;
-          height: 500px;
+          height: 800px;
           position: absolute;
           padding: 5px 15px;
           background-color: white;
@@ -30,11 +33,11 @@
           @media @tablet {
             margin-right: 5%;
             right: 0;
+            height: 500px;
           }
 
           @media @desktop {
             margin-right: 10%;
           }
-          
         }
 }

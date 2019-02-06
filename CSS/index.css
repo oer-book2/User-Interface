@@ -136,16 +136,12 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   padding-bottom: 10px;
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 img {
@@ -153,8 +149,8 @@ img {
   height: auto;
 }
 .container {
+  min-width: 275px;
   max-width: 1500px;
-  min-width: 250px;
   width: 100%;
   margin: 0 auto;
   background: white;
@@ -172,6 +168,8 @@ header img {
   object-fit: cover;
 }
 header .main {
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -185,8 +183,8 @@ header .main {
   background-color: white;
   border-radius: 10px;
 }
-header .main button {
-  border: 1px solid gray;
+header .main .custom-button {
+  border: 1px solid black;
   border-radius: 30px;
   background: white;
   text-align: center;
@@ -200,12 +198,13 @@ header .main button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 570px;
+  height: 870px;
   position: relative;
 }
 @media (min-width: 501px) {
   .mission {
     justify-content: flex-end;
+    height: 570px;
   }
 }
 .mission img {
@@ -214,6 +213,8 @@ header .main button {
   object-fit: cover;
 }
 .mission section {
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -221,7 +222,7 @@ header .main button {
   text-align: center;
   width: 80%;
   max-width: 500px;
-  height: 500px;
+  height: 800px;
   position: absolute;
   padding: 5px 15px;
   background-color: white;
@@ -231,6 +232,7 @@ header .main button {
   .mission section {
     margin-right: 5%;
     right: 0;
+    height: 500px;
   }
 }
 @media (min-width: 801px) {
@@ -242,11 +244,12 @@ header .main button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 570px;
+  height: 870px;
   position: relative;
 }
 @media (min-width: 501px) {
   .help {
+    height: 570px;
     justify-content: flex-start;
   }
 }
@@ -256,6 +259,8 @@ header .main button {
   object-fit: cover;
 }
 .help section {
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -263,7 +268,7 @@ header .main button {
   text-align: center;
   width: 80%;
   max-width: 500px;
-  height: 500px;
+  height: 800px;
   position: absolute;
   padding: 5px 15px;
   background-color: white;
@@ -271,6 +276,7 @@ header .main button {
 }
 @media (min-width: 501px) {
   .help section {
+    height: 500px;
     margin-left: 5%;
     left: 0;
   }
@@ -279,6 +285,17 @@ header .main button {
   .help section {
     margin-left: 10%;
   }
+}
+.help section .custom-button {
+  border: 1px solid black;
+  border-radius: 30px;
+  background: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+  width: 200px;
+  height: 50px;
 }
 .contact {
   display: flex;
@@ -293,6 +310,8 @@ header .main button {
   object-fit: cover;
 }
 .contact section {
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -305,7 +324,7 @@ header .main button {
   background-color: white;
   border-radius: 10px;
 }
-.contact p {
+.contact section p {
   width: 169px;
   display: flex;
   justify-content: space-between;

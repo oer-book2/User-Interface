@@ -180,8 +180,8 @@ header .main {
   height: 500px;
   position: absolute;
   padding: 5px 15px;
-  background-color: white;
   border-radius: 10px;
+  background-color: white;
 }
 header .main .custom-button {
   border: 1px solid black;
@@ -193,6 +193,13 @@ header .main .custom-button {
   outline: none;
   width: 200px;
   height: 50px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+header .main .custom-button:hover {
+  background-color: black;
+  color: white;
 }
 .mission {
   display: flex;
@@ -296,6 +303,13 @@ header .main .custom-button {
   outline: none;
   width: 200px;
   height: 50px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.help section .custom-button:hover {
+  background-color: black;
+  color: white;
 }
 .contact {
   display: flex;

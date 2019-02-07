@@ -156,7 +156,7 @@ img {
 }
 .keep-centered {
   min-width: 300px;
-  max-width: 1500px;
+  max-width: 710px;
   width: 100%;
   margin: 0 auto;
   background-color: transparent;
@@ -166,6 +166,19 @@ img {
 }
 .full {
   width: 100%;
+}
+.iColor {
+  margin-bottom: 10px;
+}
+.iColor:hover {
+  color: grey;
+}
+.iColor:active {
+  color: black;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 header {
   display: flex;
@@ -210,6 +223,10 @@ header .main .custom-button {
 header .main .custom-button:hover {
   background-color: black;
   color: white;
+}
+header .main .custom-button:active {
+  background-color: white;
+  color: black;
 }
 .mission {
   display: flex;
@@ -311,6 +328,10 @@ header .main .custom-button:hover {
   background-color: black;
   color: white;
 }
+.help section .custom-button:active {
+  background-color: white;
+  color: black;
+}
 .contact {
   display: flex;
   align-items: center;
@@ -363,10 +384,15 @@ header .main .custom-button:hover {
   flex-direction: column;
   text-align: center;
   width: 70%;
-  height: 500px;
+  height: 350px;
   padding: 5px 15px;
   border-radius: 10px;
   background-color: white;
+}
+@media (min-width: 520px) {
+  .about section {
+    height: 320px;
+  }
 }
 .tab {
   float: left;
@@ -386,16 +412,20 @@ header .main .custom-button:hover {
   text-align: left;
   cursor: pointer;
 }
+button:hover {
+  background-color: #757677 !important;
+}
 .tabcontent {
   word-wrap: break-word;
   float: left;
   padding: 0px 12px;
   border: 1px solid black;
   width: 65%;
-  height: 375px;
+  height: 255px;
 }
 .tab [data-tab="1"] {
-  background-color: #ccced1;
+  background-color: #9fa3a8;
+  color: white;
 }
 #contain {
   width: 100%;

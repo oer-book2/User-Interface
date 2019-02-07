@@ -10,7 +10,9 @@ class Tab {
     select() {
         const links = document.querySelectorAll('.tablinks');
         links.forEach(links => links.style.background = "#f1f1f1");
-        this.element.style.background = "#ccced1";
+        links.forEach(links => links.style.color = "black");
+        this.element.style.background = "#9fa3a8";
+        this.element.style.color = "white";
         this.tabItem.select();
       }
 }

@@ -136,16 +136,12 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   padding-bottom: 10px;
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 img {
@@ -153,18 +149,29 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1500px;
-  min-width: 250px;
+  min-width: 300px;
   width: 100%;
   margin: 0 auto;
   background: white;
+}
+.keep-centered {
+  min-width: 300px;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.full {
+  width: 100%;
 }
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 570px;
-  position: relative;
 }
 header img {
   height: 100%;
@@ -172,6 +179,8 @@ header img {
   object-fit: cover;
 }
 header .main {
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -180,13 +189,12 @@ header .main {
   width: 80%;
   max-width: 500px;
   height: 500px;
-  position: absolute;
   padding: 5px 15px;
-  background-color: white;
   border-radius: 10px;
+  background-color: white;
 }
-header .main button {
-  border: 1px solid gray;
+header .main .custom-button {
+  border: 1px solid black;
   border-radius: 30px;
   background: white;
   text-align: center;
@@ -195,17 +203,23 @@ header .main button {
   outline: none;
   width: 200px;
   height: 50px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+header .main .custom-button:hover {
+  background-color: black;
+  color: white;
 }
 .mission {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 570px;
-  position: relative;
+  height: 770px;
 }
-@media (min-width: 501px) {
+@media (min-width: 351px) {
   .mission {
-    justify-content: flex-end;
+    height: 570px;
   }
 }
 .mission img {
@@ -214,6 +228,8 @@ header .main button {
   object-fit: cover;
 }
 .mission section {
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -221,21 +237,24 @@ header .main button {
   text-align: center;
   width: 80%;
   max-width: 500px;
-  height: 500px;
-  position: absolute;
+  height: 700px;
   padding: 5px 15px;
-  background-color: white;
   border-radius: 10px;
+  background-color: white;
+}
+@media (min-width: 351px) {
+  .mission section {
+    height: 500px;
+  }
 }
 @media (min-width: 501px) {
   .mission section {
-    margin-right: 5%;
-    right: 0;
+    margin-left: 20%;
   }
 }
 @media (min-width: 801px) {
   .mission section {
-    margin-right: 10%;
+    margin-left: 40%;
   }
 }
 .help {
@@ -243,12 +262,6 @@ header .main button {
   align-items: center;
   justify-content: center;
   height: 570px;
-  position: relative;
-}
-@media (min-width: 501px) {
-  .help {
-    justify-content: flex-start;
-  }
 }
 .help img {
   height: 100%;
@@ -256,6 +269,8 @@ header .main button {
   object-fit: cover;
 }
 .help section {
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -264,21 +279,37 @@ header .main button {
   width: 80%;
   max-width: 500px;
   height: 500px;
-  position: absolute;
   padding: 5px 15px;
-  background-color: white;
   border-radius: 10px;
+  background-color: white;
 }
 @media (min-width: 501px) {
   .help section {
-    margin-left: 5%;
-    left: 0;
+    margin-right: 20%;
   }
 }
 @media (min-width: 801px) {
   .help section {
-    margin-left: 10%;
+    margin-right: 40%;
   }
+}
+.help section .custom-button {
+  border: 1px solid black;
+  border-radius: 30px;
+  background: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.help section .custom-button:hover {
+  background-color: black;
+  color: white;
 }
 .contact {
   display: flex;
@@ -293,6 +324,8 @@ header .main button {
   object-fit: cover;
 }
 .contact section {
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -305,8 +338,65 @@ header .main button {
   background-color: white;
   border-radius: 10px;
 }
-.contact p {
+.contact section p {
   width: 169px;
   display: flex;
   justify-content: space-between;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 570px;
+}
+.about img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.about section {
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start space-evenly;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+  height: 500px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+.tab {
+  float: left;
+  border: 1px solid black;
+  border-right: none;
+  background-color: #f1f1f1;
+  width: 35%;
+  height: 255px;
+}
+.tab button {
+  display: block;
+  background: inherit;
+  padding: 10px 2%;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+}
+.tabcontent {
+  word-wrap: break-word;
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid black;
+  width: 65%;
+  height: 375px;
+}
+.tab [data-tab="1"] {
+  background-color: #ccced1;
+}
+#contain {
+  width: 100%;
 }

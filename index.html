@@ -5,6 +5,7 @@
 <title>Bookr</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+<script src="js/index.js" async></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
  crossorigin="anonymous">
@@ -12,57 +13,116 @@
 
 <body>
     <div class="container">
-        <header>
+        <header class="full">
             <img src="library.jpg" alt="library"> 
-            <section class="main">
-                <h1>Bookr</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Vivamus magna magna, varius vitae erat eu, sodales semper nunc. 
-                    Donec tristique pharetra sem, vitae faucibus erat varius eu. Nullam lacinia feugiat consequat. 
-                    Phasellus ac libero felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <a href="https://obrtextbooks.netlify.com/#" target="_blank">
-                <button>
-                    Login
-                </button>
-                </a>
-            </section>
+
+            <div class="keep-centered"> 
+                <section class="main">
+                    <h1>Bookr</h1>
+                    <p>
+                    Bookr is an open educational resource for teachers. On Bookr, you can read reviews on, review, and download
+                    free textbooks on a wide range of subjects.
+                    </p>
+                    <p>
+                        If you want free way to improve your teaching with peer reviewed textbooks, join Bookr today!
+                    </p>
+                    <a href="https://obrtextbooks.netlify.com/#" target="_blank">
+                    <button class="custom-button">
+                        Login
+                    </button>
+                    </a>
+                </section>
+            </div>  
         </header>
-            <div class="mission">
+            <div class="mission full">
                 <img src="teach.jpg" alt="teacher"> 
-                <section>
-                    <h2>Our Mission</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Vivamus magna magna, varius vitae erat eu, sodales semper nunc. 
-                        Donec tristique pharetra sem, vitae faucibus erat varius eu. Nullam lacinia feugiat consequat. 
-                        Phasellus ac libero felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </section>
+                <div class="keep-centered">
+                    <section>
+                        <h2>Our Mission</h2>
+                        <p>
+                            Bookr's team set out with a goal, making learning more accessible for people
+                            all around the world. No matter the location or financial situation, we wanted teachers
+                            to be able to freely teach with confidence knowing that the textbooks they were using were 
+                            reliable. We are happy to say that we have empowered thousands teachers around the world and 
+                            will continue to provide access to our open educational resource everyday.
+                        </p>
+                    </section>
+                </div>
             </div>
-            <div class="help">
+            <div class="help full">
                 <img src="help.jpg" alt="fist bump"> 
-                <section>
-                    <h2>How You Can Help</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Vivamus magna magna, varius vitae erat eu, sodales semper nunc. 
-                        Donec tristique pharetra sem, vitae faucibus erat varius eu. Nullam lacinia feugiat consequat. 
-                        Phasellus ac libero felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </section>
+                    <div class="keep-centered">
+                        <section>
+                            <h2>How You Can Help</h2>
+                            <p>
+                                The best way to help Bookr is by telling people about Bookr!
+                                We want everyone to use our free resource. However, if you would 
+                                like to make make sure Bookr stays up and running, a donation of
+                                any amount would be appreciated.
+                            </p>
+                            <a href="#">
+                                <button class="custom-button">
+                                    Donate
+                                </button>
+                            </a>
+                        </section>
+                    </div>
             </div>
-            <div class="contact">
+            <div class="contact full">
                 <img src="social.jpg" alt="tablet"> 
-                <section>
-                    <h2>Social Media</h2>
-                    <p>
-                        <i class="fab fa-facebook-square fa-2x"></i>
-                        <i class="fab fa-twitter fa-2x"></i>
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </p>
-                </section>
+                <div class="keep-centered">
+                    <section>
+                        <h2>Social Media</h2>
+                        <p>
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                            <i class="fab fa-twitter fa-2x"></i>
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="about full">
+                    <img src="work.jpg" alt="work table"> 
+                    <div class="keep-centered"> 
+                        <section>
+                            <h2>About The Developers</h2>
+                            <div id = "contain">
+                            <div class="tab">
+                                    <button class="tablinks" data-tab="1">Brandon <br> Borrero </button>
+                                    <button class="tablinks" data-tab="2">Enoka <br> Jaona </button>
+                                    <button class="tablinks" data-tab="3">Karen <br> Yearwood </button>
+                                    <button class="tablinks" data-tab="4">Latifah <br> President </button>
+                                    <button class="tablinks" data-tab="5"> Lauren <br> Dubose </button>
+                                </div>
+                                
+                                <div class="tabcontent" data-tab="1" style="display: block;">
+                                    <h2>UI</h2>
+                                    <p>11111.</p>
+                                </div>
+                                
+                                <div class="tabcontent" data-tab="2" style="display: none;">
+                                    <h2>Front End</h2>
+                                    <p>22222.</p> 
+                                </div>
+                                
+                                <div class="tabcontent" data-tab="3" style="display: none;"> 
+                                    <h2>UI</h2>
+                                    <p>33333.</p>
+                                </div>
+                
+                                <div class="tabcontent" data-tab="4" style="display: none;">
+                                    <h2>Backend</h2>
+                                    <p>44444.</p>
+                                </div>
+                
+                                <div  class="tabcontent" data-tab="5" style="display: none;"> 
+                                    <h2>Scrum Master</h2>
+                                    <p>55555.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
             </div>
     </div>
 </body>

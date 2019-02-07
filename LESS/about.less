@@ -1,0 +1,65 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+  
+      section {
+          border: 1px solid black;
+          box-shadow: 5px 10px 8px black;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start space-evenly;
+          flex-direction: column;
+          text-align: center;
+          width: 70%;
+          height: 500px;
+          padding: 5px 15px;
+          border-radius: 10px;
+          background-color: white;
+      }
+
+}
+
+.tab {
+    float: left;
+    border: 1px solid black;
+    border-right: none;
+    background-color: #f1f1f1;
+    width: 35%;
+    height: 255px;
+  }
+  
+  .tab button {
+    display: block;
+    background: inherit;
+    padding: 10px 2%;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .tabcontent {
+    word-wrap: break-word;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid black;
+    width: 65%;
+    height: 375px;
+  }
+
+  .tab [data-tab="1"] {
+    background-color: #ccced1;
+  }
+
+  #contain {
+      width: 100%;
+  }

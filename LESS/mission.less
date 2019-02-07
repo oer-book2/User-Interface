@@ -1,43 +1,44 @@
 .mission {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 870px;
-    position: relative;
-    @media @tablet {
-        justify-content: flex-end;
-        height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 770px;
+
+    @media (min-width: 351px) {
+      height: 570px;
     }
 
-      img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-      }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
 
-      section {
-          border: 1px solid black;
-          box-shadow: 5px 10px 8px black;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          flex-direction: column;
-          text-align: center;
-          width: 80%;
-          max-width: 500px;
-          height: 800px;
-          position: absolute;
-          padding: 5px 15px;
-          background-color: white;
-          border-radius: 10px;
-          @media @tablet {
-            margin-right: 5%;
-            right: 0;
-            height: 500px;
-          }
+    section {
+        border: 1px solid black;
+        box-shadow: 5px 10px 8px black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        max-width: 500px;
+        height: 700px;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background-color: white;
 
-          @media @desktop {
-            margin-right: 10%;
-          }
+        @media (min-width: 351px) {
+          height: 500px;
         }
+
+        @media @tablet {
+          margin-left: 20%;
+        }
+
+        @media @desktop {
+          margin-left: 40%;
+        }
+    }
 }

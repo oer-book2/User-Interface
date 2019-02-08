@@ -370,6 +370,14 @@ header .main .custom-button:active {
   justify-content: center;
   height: 570px;
 }
+.about h2 {
+  font-size: 2.5rem;
+}
+@media (min-width: 501px) {
+  .about h2 {
+    font-size: 3.5rem;
+  }
+}
 .about img {
   height: 100%;
   width: 100%;
@@ -400,7 +408,7 @@ header .main .custom-button:active {
   border-right: none;
   background-color: #f1f1f1;
   width: 35%;
-  height: 255px;
+  height: 252px;
 }
 .tab button {
   display: block;
@@ -421,7 +429,7 @@ button:hover {
   padding: 0px 12px;
   border: 1px solid black;
   width: 65%;
-  height: 255px;
+  height: 252px;
 }
 .tab [data-tab="1"] {
   background-color: #9fa3a8;

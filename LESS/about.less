@@ -4,30 +4,39 @@
     justify-content: center;
     height: 570px;
 
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-  
-      section {
-          border: 1px solid black;
-          box-shadow: 5px 10px 8px black;
-          display: flex;
-          align-items: center;
-          justify-content: flex-start space-evenly;
-          flex-direction: column;
-          text-align: center;
-          width: 70%;
-          height: 350px;
-          padding: 5px 15px;
-          border-radius: 10px;
-          background-color: white;
+    h2 {
+      font-size: 2.5rem;
 
-          @media (min-width: 520px) {
-            height: 320px;
-          }
+      @media @tablet {
+        font-size: 3.5rem;
       }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    section {
+        border: 1px solid black;
+        box-shadow: 5px 10px 8px black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start space-evenly;
+        flex-direction: column;
+        text-align: center;
+        width: 70%;
+        height: 350px;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background-color: white;
+
+        @media (min-width: 520px) {
+          height: 320px;
+        }
+    }
+
 
 }
 
@@ -37,7 +46,7 @@
   border-right: none;
   background-color: #f1f1f1;
   width: 35%;
-  height: 255px;
+  height: 252px;
 }
 
 .tab button {
@@ -61,7 +70,7 @@ button:hover{
   padding: 0px 12px;
   border: 1px solid black;
   width: 65%;
-  height: 255px;
+  height: 252px;
 }
 
 .tab [data-tab="1"] {
